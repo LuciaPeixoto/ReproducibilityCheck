@@ -7,19 +7,23 @@ We expect that this may be useful to journalists, certain program officers, and 
 This document is structured as a checklist.
 Our aim is to design a checklist that can be completed using only the materials and methods section of a published paper.
 Our checklist focuses on a number of components key to reproducibility, which currently includes data, source code, computing environment.
-In general, we expect more checked boxes to indicate work that is more reproducible.
+We expect more checked boxes to indicate work that is more reproducible.
 
 ## Data
 
 - [ ] URLs or supplementary files are provided for all datasets described in the project.
-- [ ] All datasets described in the project have either a database-assigned identifier or DOI to indicate the version of record.
+- [ ] All raw data described in the project have either a database-assigned identifier or DOI to indicate the version of record.
+- [ ] If preprocessing or quality control has been performed, the version of the data after preprocessing is provided and clearly noted.
+  - [ ] The preprocessed data have a database-assigned identifier or a DOI to indicate the version used in the paper in question.
 - [ ] Datasets, databases, or other resources have a clearly specified license that permits reuse.
 
 ## Source Code
 
-- [ ] The location where all analytical source code can be found is clearly specified.
+- [ ] The location where all source code can be found is clearly specified.
 - [ ] The source code is made available via a version control service.
+- [ ] The authors clearly specify a single script or workflow that will automatically regenerate the results of their analyses.
 - [ ] The specific version of the source code associated with the paper has been assigned a DOI by an archiving service (e.g. Figshare, Zenodo).
+- [ ] The source code has an [open license](http://opendefinition.org/guide/). Common open licenses for academic software include "BSD" and "MIT" licenses.
 
 ## Computing Environment
 
